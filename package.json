@@ -1,0 +1,10 @@
+{
+  "name": "coming-soon-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./alpha-five-academy-app run dev",
+    "build": "npm --prefix ./alpha-five-academy-app run build",
+    "start": "npm --prefix ./alpha-five-academy-app run start",
+    "lint": "npm --prefix ./alpha-five-academy-app run lint"
+  }
+}
