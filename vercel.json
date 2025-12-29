@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd alpha-five-academy-app && npm run build",
+  "outputDirectory": "alpha-five-academy-app/.next",
+  "installCommand": "cd alpha-five-academy-app && npm install",
+  "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/alpha-five-academy-app/$1"
+    }
+  ]
+}
