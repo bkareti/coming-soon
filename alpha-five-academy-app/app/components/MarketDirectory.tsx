@@ -451,7 +451,7 @@ export default function MarketDirectory() {
 
   return (
     <div className="w-full min-h-screen bg-gray-50 p-5">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="fullpadding mx-auto">
         {/* Page Header */}
         <div className="text-center mb-20 sm:mb-24">
           <h1 className="text-4xl sm:text-4xl lg:text-4xl font-bold text-[#1a4d6d] mb-6 leading-tight">

@@ -157,14 +157,12 @@ export default function Header() {
                 </li>
 
                 <li className="nav-item">
-                  <a
-                    href="https://livelongwealth.in/livelongwealth/home/register"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/signup"
                     className="px-4 py-2 rounded-md bg-linear-to-r from-[#f59e0b] to-[#d97706] text-white font-semibold text-sm shadow hover:shadow-md transition"
                   >
                     Sign Up
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

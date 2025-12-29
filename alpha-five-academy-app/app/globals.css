@@ -80,13 +80,7 @@
   --gray-text: #6b7280;
 }
 
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Global Styles - Tailwind base reset is better than manual reset */
 html {
   scroll-behavior: smooth;
 }
@@ -1034,9 +1028,5 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
-.fullpadding{
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
+/* Removed custom padding classes that conflict with Tailwind utilities */
+/* Use Tailwind classes instead: p-*, py-*, px-*, pt-*, pb-*, pl-*, pr-* */
