@@ -1,12 +1,15 @@
 {
-  "buildCommand": "cd alpha-five-academy-app && npm run build",
-  "outputDirectory": "alpha-five-academy-app/.next",
-  "installCommand": "cd alpha-five-academy-app && npm install",
-  "framework": "nextjs",
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/alpha-five-academy-app/$1"
+      "src": "alpha-five-academy-app/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "alpha-five-academy-app/$1"
     }
   ]
 }
