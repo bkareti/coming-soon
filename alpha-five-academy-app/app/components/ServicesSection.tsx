@@ -37,7 +37,7 @@ export default function ServicesSection() {
         </div>
 
         {/* First Row of Services */}
-        <div className="row services-grid mt-5 d-flex flex-row flex-nowrap justify-content-center">
+        <div className="row services-grid mt-12 flex flex-row flex-nowrap justify-center">
           {services.map((service) => (
             <div
               key={service.id}

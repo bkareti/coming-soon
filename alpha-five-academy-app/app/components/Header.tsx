@@ -67,7 +67,7 @@ export default function Header() {
               id="navbarNav"
             >
               <ul className="navbar-nav">
-                <li className="nav-item active">
+                <li className="nav-item">
                   <Link
                     href="/"
                     className={
@@ -93,88 +93,67 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#services">NEWS</a>
+                  <Link
+                    href="/market-az"
+                    className={
+                      pathname === "/market-az"
+                        ? "underline decoration-[#f59e0b] underline-offset-4"
+                        : ""
+                    }
+                  >
+                    MARKET A-Z
+                  </Link>
                 </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="dropdown-toggle"
-                    href="#"
-                    id="servicesDropdown"
-                    role="button"
+                <li className="nav-item">
+                  <Link
+                    href="/news"
+                    className={
+                      pathname === "/news"
+                        ? "underline decoration-[#f59e0b] underline-offset-4"
+                        : ""
+                    }
                   >
-                    SERVICES
-                  </a>
-                  <ul
-                    className="dropdown-menu py-5"
-                    aria-labelledby="servicesDropdown"
-                  >
-                    <li>
-                      <a className="dropdown-item" href="#workshops">
-                        Workshops
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#wealth-management">
-                        Wealth Management
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#estate-planning">
-                        Estate Planning
-                      </a>
-                    </li>
-                  </ul>
+                    NEWS
+                  </Link>
                 </li>
 
-                <li className="nav-item dropdown">
-                  <a
-                    className="dropdown-toggle"
-                    href="#"
-                    id="coursesDropdown"
-                    role="button"
+                <li className="nav-item">
+                  <Link
+                    href="/services"
+                    className={
+                      pathname === "/services"
+                        ? "underline decoration-[#f59e0b] underline-offset-4"
+                        : ""
+                    }
+                  >
+                    SERVICES
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link
+                    href="/courses"
+                    className={
+                      pathname === "/courses"
+                        ? "underline decoration-[#f59e0b] underline-offset-4"
+                        : ""
+                    }
                   >
                     COURSES
-                  </a>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="coursesDropdown"
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link
+                    href="/contact"
+                    className={
+                      pathname === "/contact"
+                        ? "underline decoration-[#f59e0b] underline-offset-4"
+                        : ""
+                    }
                   >
-                    <li className="dropdown-header">ONLINE COURSES</li>
-                    <li>
-                      <a className="dropdown-item" href="#online-basics">
-                        Basics of Capital Markets (Complementary*)
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#online-investment">
-                        Investment and Portfolio Construction – Basics to
-                        Advanced (Complementary*)
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#online-advanced">
-                        Advanced Techno-Funda Analysis Course
-                      </a>
-                    </li>
-                    <li className="dropdown-divider" />
-                    <li className="dropdown-header">OFFLINE COURSES</li>
-                    <li>
-                      <a className="dropdown-item" href="#offline-advanced">
-                        Advanced TechnoFunda Analysis Course
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#offline-mentorship">
-                        Mentorship Programs
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a href="#testimonials">GET IN TOUCH</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#testimonials">MARKET A-Z</a>
+                    GET IN TOUCH
+                  </Link>
                 </li>
 
                 <li className="nav-item">
@@ -182,7 +161,7 @@ export default function Header() {
                     href="https://livelongwealth.in/livelongwealth/home/register"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn secondary-btn"
+                    className="px-4 py-2 rounded-md bg-linear-to-r from-[#f59e0b] to-[#d97706] text-white font-semibold text-sm shadow hover:shadow-md transition"
                   >
                     Sign Up
                   </a>
