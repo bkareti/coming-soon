@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import WorkInProgress from "../components/WorkInProgress";
+import ContactForm from "../components/ContactForm";
 
 export const metadata = {
   title: "Get In Touch - Alpha5Academy",
@@ -13,11 +13,7 @@ export default function ContactPage() {
     <>
       <Header />
       <main className="flex-1">
-        <WorkInProgress
-          title="Get In Touch"
-          description="We'd love to hear from you! Our dedicated contact form and customer support team are being set up to assist you with any questions about our services, courses, or investment guidance."
-          icon="📞"
-        />
+        <ContactForm />
       </main>
       <Footer />
     </>

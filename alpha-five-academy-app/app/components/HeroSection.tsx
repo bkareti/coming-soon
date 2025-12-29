@@ -14,7 +14,7 @@ export default function HeroSection() {
 
           <div className="mt-6 pb-10">
             <a
-              href="#services"
+              href="/signup"
               className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-linear-to-r from-[#f59e0b] to-[#d97706] text-white font-semibold shadow hover:shadow-lg transition"
             >
               Sign Up Now
