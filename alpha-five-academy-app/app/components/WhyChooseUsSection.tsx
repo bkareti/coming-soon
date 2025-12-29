@@ -120,7 +120,7 @@ export default function WhyChooseUsSection() {
         </div>
 
         {/* Contact & Address Section */}
-        <div className="row contact-section mt-5 pt-5">
+        <div className="row contact-section mt-12 pt-12">
           <div className="col-md-12">
             <div className="contact-content">
               <h3 className="contact-title">Get In Touch</h3>
@@ -166,7 +166,7 @@ export default function WhyChooseUsSection() {
                 </div>
               </div>
 
-              <div className="contact-details mt-4">
+              <div className="contact-details mt-6">
                 <p className="email">
                   <strong>Email:</strong>{" "}
                   <a href="mailto:support@livelongwealth.com">
@@ -188,7 +188,7 @@ export default function WhyChooseUsSection() {
               </div>
 
               {/* Social Media Icons */}
-              <div className="social-icons mt-4">
+              <div className="social-icons mt-6">
                 <a href="#" title="Twitter" aria-label="Twitter">
                   <i className="fab fa-twitter"></i>
                 </a>

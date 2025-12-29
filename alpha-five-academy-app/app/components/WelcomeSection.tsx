@@ -42,7 +42,7 @@ export default function WelcomeSection() {
               </p>
 
               <div className="align-middle align-center">
-                <a href="#services" className="btn secondaray-btn mt-4">
+                <a href="#services" className="btn secondaray-btn mt-6">
                   Join Us
                 </a>
               </div>
