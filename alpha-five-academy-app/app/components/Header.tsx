@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +29,17 @@ export default function Header() {
       {/* Header */}
       <header className="site-header">
         <div className="header-wrapper">
-          <h1 className="text-3xl font-bold text-black">Alpha5academy</h1>
           {/* Logo */}
-          {/* <Link href="/" className="site-logo">
-          {/*}  <img
-              src="/images/logo.png"
-              alt="livelong wealth logo"
-              style={{ width: "auto", height: "50px" }}
+          <Link href="/" className="site-logo">
+            <Image
+              src="/images/Alpha5AcademyLogo.png"
+              alt="Alpha5Academy logo"
+              width={150}
+              height={50}
+              className="h-12 w-auto"
+              priority
             />
-          </Link> */}
+          </Link>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -102,7 +105,7 @@ export default function Header() {
                     SERVICES
                   </a>
                   <ul
-                    className="dropdown-menu"
+                    className="dropdown-menu py-5"
                     aria-labelledby="servicesDropdown"
                   >
                     <li>

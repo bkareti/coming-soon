@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* Hide Next.js Logo */
+[class*="next-logo"],
+[id*="next-logo"],
+.next-logo,
+#next-logo {
+  display: none !important;
+}
+
 /* Bootstrap-like Container & Grid */
 .container {
   width: 100%;
@@ -178,17 +186,15 @@ body {
   align-items: center;
   transition: transform 0.3s ease;
   margin: 0;
-  text: white;
   flex-shrink: 0;
   text-decoration: none;
-  background: var(--primary-color);
-  padding: 8px 16px;
-  border-radius: 8px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
 }
 
 .site-logo:hover {
-  transform: scale(1.02);
-  background: var(--secondary-color);
+  transform: scale(1.05);
 }
 
 .site-logo img {
@@ -198,7 +204,7 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 /* Navigation */
@@ -273,7 +279,7 @@ body {
 }
 
 .dropdown-toggle::after {
-  content: " ▼";
+  
   font-size: 10px;
   margin-left: 4px;
 }
@@ -286,6 +292,8 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   padding: 8px 0;
+  padding-left: 10px;
+  padding-top: 5px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -347,6 +355,7 @@ body {
   cursor: pointer;
   font-size: 13px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .btn:hover {

@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#2c3e50] text-gray-300 pt-[60px]">
+    <footer className="w-full bg-[#2c3e50] text-gray-300 mt-auto">
       <div className="w-full bg-[#2c3e50]">
-        <div className="max-w-[1140px] mx-auto px-4">
+        <div className="w-full px-4 flex flex-col items-center justify-center">
           {/* 
           <div className="flex flex-wrap gap-10 py-10 border-b border-[#445566] items-start">
             <div className="flex-1 min-w-[200px]">
@@ -120,18 +120,18 @@ export default function Footer() {
           */}
 
           {/* Footer Bottom */}
-          <div className="flex flex-col items-center justify-center py-[30px] border-t border-[#445566]">
-            <p className="text-[13px] text-[#8b95a5] mb-2.5 text-center w-full">
+          <div className="flex flex-col items-center justify-center py-8 border-t border-[#445566] text-center">
+            <p className="text-[13px] text-[#8b95a5] mb-2 w-full  mx-auto hover:text-[#f59e0b]">
               © Alpha5Academy Pvt.Ltd. All rights reserved.
             </p>
-            <p className="text-[13px] text-center w-full">
+            <p className="text-[13px] w-full  mx-auto">
               <a
                 href="#privacy"
                 className="text-[#8b95a5] no-underline transition-colors duration-300 mx-2 hover:text-[#f59e0b]"
               >
                 Privacy
-              </a>{" "}
-              •{" "}
+              </a>
+              <span className="text-[#8b95a5] mx-1">•</span>
               <a
                 href="#terms"
                 className="text-[#8b95a5] no-underline transition-colors duration-300 mx-2 hover:text-[#f59e0b]"

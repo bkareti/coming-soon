@@ -46,9 +46,9 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${barlow.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${barlow.variable} antialiased min-h-screen flex flex-col`}
       >
-        {children}
+        <main className="flex-1 flex flex-col">{children}</main>
       </body>
     </html>
   );

@@ -8,14 +8,16 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="main-content">
+    <>
       <Header />
-      <HeroSection />
-      {/*<LivelongWealthSection />
+      <main className="flex-1 w-full">
+        <HeroSection />
+        {/*<LivelongWealthSection />
       <WelcomeSection />
       <ServicesSection />
       <WhyChooseUsSection />*/}
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
