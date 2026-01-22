@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import WorkInProgress from "../components/WorkInProgress";
+import CoursesDirectory from "../components/CoursesDirectory";
 
 export const metadata = {
   title: "Courses - Alpha5Academy",
@@ -12,12 +12,8 @@ export default function CoursesPage() {
   return (
     <>
       <Header />
-      <main className="flex-1">
-        <WorkInProgress
-          title="Learning Courses"
-          description="Master the art of investing with our comprehensive courses. From basics of capital markets to advanced techno-fundamental analysis, we offer both online and offline programs designed for every skill level."
-          icon="📚"
-        />
+      <main className="flex-1 w-full">
+        <CoursesDirectory />
       </main>
       <Footer />
     </>
